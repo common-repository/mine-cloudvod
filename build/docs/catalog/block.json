@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "version": "1.9.0",
+  "name": "mine-cloudvod/docs-catalog",
+  "title": "Document catalog",
+  "category": "mine",
+  "icon": "",
+  "description": "List document directories.",
+  "keywords": [
+    "mine",
+    "cloudvod",
+    "docs",
+    "directory",
+    "catalog"
+  ],
+  "textdomain": "mine-cloudvod",
+  "attributes": {
+    "catid": {
+      "type": "number"
+    }
+  },
+  "render": "file:./render.php",
+  "editorScript": [
+    "file:./index.js",
+    "file:./view.js",
+    "jquery"
+  ],
+  "style": "file:./view.css"
+}

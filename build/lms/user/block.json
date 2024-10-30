@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "version": "1.7.8",
+  "name": "mine-cloudvod/user",
+  "title": "User Center",
+  "category": "mine",
+  "icon": "admin-users",
+  "description": "Show login & logout button.",
+  "keywords": [
+    "user",
+    "hub",
+    "login",
+    "logout"
+  ],
+  "textdomain": "mine-cloudvod",
+  "attributes": {
+    "submenus": {
+      "type": "array",
+      "default": [
+        {
+          "title": "Course schedule",
+          "url": "/mcv-my-courses/",
+          "sortno": "0"
+        },
+        {
+          "title": "Orders",
+          "url": "/mcv-order-list/",
+          "sortno": "1"
+        },
+        {
+          "title": "Favorites",
+          "url": "/mcv-favorites/",
+          "sortno": "2"
+        }
+      ]
+    }
+  },
+  "render": "file:./render.php",
+  "editorScript": "file:./index.js",
+  "style": [
+    "file:./index.css",
+    "wp-components"
+  ],
+  "script": [
+    "file:./view.js",
+    "jquery",
+    "mcv_layer"
+  ]
+}
